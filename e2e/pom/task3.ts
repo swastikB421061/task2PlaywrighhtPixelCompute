@@ -18,7 +18,6 @@ export class Task3 {
         await this.page.getByTestId(Task3Constants.testIds.startFromScratchButton).click();
         await this.page.getByTestId(Task3Constants.testIds.addSingleChoiceElement).click();
         await this.page.getByTestId(Task3Constants.testIds.contentTextField).fill(Task3Constants.formTexts.question);
-        await this.page.waitForTimeout(1000);
         await this.page.getByTestId(Task3Constants.testIds.optionInput0).fill(Task3Constants.formTexts.optionYes);
         await this.page.getByTestId(Task3Constants.testIds.optionInput1).fill(Task3Constants.formTexts.optionNo);
         await this.page.getByTestId(Task3Constants.testIds.option3Hover).hover();
