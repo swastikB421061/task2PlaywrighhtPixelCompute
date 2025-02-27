@@ -27,7 +27,7 @@ export default defineConfig({
     {
       name: "teardown",
       use: { ...devices["Desktop Chrome"] },
-      testMatch: "**/global.teardown.ts",
+      testMatch: "**/globalTeardown.ts",
     },
     {
       name: "Logged In tests",
