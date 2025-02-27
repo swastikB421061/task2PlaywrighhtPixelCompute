@@ -1,3 +1,4 @@
+import { user } from '../../CONSTANTS/selectors/logindata';
 import { test, expect } from '../fixture';
 import { Task2 } from '../pom/task2';
 
@@ -28,7 +29,7 @@ test.describe("Task 2 - Unique Submission Tracking", () => {
             const userOnePage = await userOneContext.newPage();
             const user1Form = new Task2(userOnePage);
 
-            await user1Form.submitForm("user1@example.com", formURL);
+            await user1Form.submitForm(user.email, formURL);
             await user1Form.checkDuplicateSubmission(formURL);
         });
 
@@ -49,7 +50,7 @@ test.describe("Task 2 - Unique Submission Tracking", () => {
             const userThreePage = await userThreeContext.newPage();
             const user3Form = new Task2(userThreePage);
 
-            await user3Form.submitForm("user3@example.com", formURL);
+            await user3Form.submitForm(user.email, formURL);
         });
 
         await test.step("Clean Up - Delete the Form", async () => {

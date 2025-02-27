@@ -12,20 +12,20 @@
     },
     {
       "name": "__neetoform_session",
-      "value": "201fc1eedbb4c467a5df6e1aac29b1d7",
+      "value": "e2f97f0531de785415ccd98e0c27a42f",
       "domain": "neeto-form-web-playwright.neetodeployapp.com",
       "path": "/",
-      "expires": 1748439758.832906,
+      "expires": 1748442062.573991,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "mp_TEST_TOKEN_mixpanel",
-      "value": "%7B%22distinct_id%22%3A%20%22%24device%3A19547a4e2c81472-0be20374752a9b-14323277-e1000-19547a4e2c91472%22%2C%22%24device_id%22%3A%20%2219547a4e2c81472-0be20374752a9b-14323277-e1000-19547a4e2c91472%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%7D",
+      "value": "%7B%22distinct_id%22%3A%20%22%24device%3A19547c82ba910c6-0046af69c7563-14323277-e1000-19547c82ba910c6%22%2C%22%24device_id%22%3A%20%2219547c82ba910c6-0046af69c7563-14323277-e1000-19547c82ba910c6%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%7D",
       "domain": ".neetodeployapp.com",
       "path": "/",
-      "expires": 1772199757,
+      "expires": 1772202064,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -36,24 +36,12 @@
       "origin": "https://neeto-form-web-playwright.neetodeployapp.com",
       "localStorage": [
         {
-          "name": "NEETOUI-490EF25F-FIXED_COLUMNS",
-          "value": "[]"
-        },
-        {
-          "name": "neeto-molecules-hidden-columns",
-          "value": "{\"state\":{\"FORMS_TABLE_HIDDEN_COLUMNS\":[]},\"version\":0}"
-        },
-        {
           "name": "neeto-molecules-columns-order",
           "value": "{\"state\":{},\"version\":0}"
         },
         {
-          "name": "WIDGET_ENABLED_STATES",
-          "value": "{\"5gvz44QueHQZFavRyBGV6wgt\":{\"chat\":true,\"engage\":true,\"replay\":false}}"
-        },
-        {
-          "name": "queryCache",
-          "value": "{\"neeto-apps-list-a3088a29-cadc-414b-bae8-974bb9827ef9\":{\"data\":{\"neetoApps\":[],\"isOwner\":true},\"modifiedAt\":1740663758849}}"
+          "name": "neeto-molecules-hidden-columns",
+          "value": "{\"state\":{\"FORMS_TABLE_HIDDEN_COLUMNS\":[]},\"version\":0}"
         }
       ]
     }

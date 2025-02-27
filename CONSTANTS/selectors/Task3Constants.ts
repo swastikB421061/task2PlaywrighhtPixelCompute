@@ -26,6 +26,10 @@ export const Task3Constants = {
         formDeleteButton: "form-delete-button",
         deleteArchiveAlertCheckbox: "delete-archive-alert-archive-checkbox",
         deleteArchiveAlertButton: "delete-archive-alert-delete-button",
+        option3Hover:"option-input-3",
+        option3Delete:"delete-option-button-3",
+        option2Hover:"option-input-2",
+        option2Delete:"delete-option-button-2",
     },
     formTexts: {
         question: "Interested in Playwright",

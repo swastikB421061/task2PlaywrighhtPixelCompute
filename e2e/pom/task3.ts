@@ -21,19 +21,32 @@ export class Task3 {
         await this.page.waitForTimeout(1000);
         await this.page.getByTestId(Task3Constants.testIds.optionInput0).fill(Task3Constants.formTexts.optionYes);
         await this.page.getByTestId(Task3Constants.testIds.optionInput1).fill(Task3Constants.formTexts.optionNo);
-        await this.page.getByTestId("option-input-3").hover();
-        await this.page.getByTestId("delete-option-button-3").click();
-        await this.page.getByTestId("option-input-2").hover();
-        await this.page.getByTestId("delete-option-button-2").click();
+        await this.page.getByTestId(Task3Constants.testIds.option3Hover).hover();
+        await this.page.getByTestId(Task3Constants.testIds.option3Delete).click();
+        await this.page.getByTestId(Task3Constants.testIds.option2Hover).hover();
+        await this.page.getByTestId(Task3Constants.testIds.option2Delete).click();
 
 
         const start = await this.page.getByTestId(Task3Constants.testIds.multipleChoicePreviewGroup);
         const end = await this.page.getByTestId(Task3Constants.testIds.emailPreviewGroup);
 
-        await start.hover();
-        await this.page.mouse.down();
-        await end.hover();
-        await this.page.mouse.up();
+
+
+        const box = await start.boundingBox();
+
+        if (box) {
+            const startX = box.x + box.width / 2;
+            const startY = box.y + box.height / 2;
+            const endY = startY - 100;
+
+
+            await this.page.mouse.move(startX, startY);
+            await this.page.mouse.down();
+            await this.page.mouse.move(startX, endY, { steps: 10 });
+            await this.page.mouse.up();
+        }
+
+
     }
 
     async enableConditionalLogic() {

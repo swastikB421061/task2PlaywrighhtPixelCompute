@@ -1,3 +1,4 @@
+import { user } from '../../CONSTANTS/selectors/logindata';
 import { test } from '../fixture';
 import { Task1 } from '../pom/task1';
 
@@ -36,7 +37,7 @@ test.describe("Task 1 - Password Protection", () => {
         });
 
         await test.step("Reload Page and Verify Submission", async () => {
-            await task1.verifySubmission("oliver@example.com");
+            await task1.verifySubmission(user.email);
         });
     });
 });
