@@ -1,13 +1,8 @@
 
 import { Page, expect } from "@playwright/test";
-import { LoginPageSelectors } from "../../CONSTANTS/selectors/logindata";
-// import { LOGIN_SELECTORS } from "../constants/selectors/login";
+import { LoginPageSelectors } from "../constants/selectors/logindata";
 export default class LoginPage {
-    page: Page;
-
-    constructor(page: Page) {
-        this.page = page;
-    }
+    constructor(private page: Page) {}
 
     loginAndVerifyUser = async ({
         email,

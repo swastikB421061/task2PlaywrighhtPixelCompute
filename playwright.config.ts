@@ -1,13 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from "dotenv";
 
 export const STORAGE_STATE = "./auth/session.json";
+dotenv.config({ path: "./e2e/config/.env" });
 
 export default defineConfig({
   testDir: './e2e/tests',
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  // workers: process.env.CI ? 1 : undefined,
+
   workers: 1,
   reporter: 'html',
   timeout: 60000,
